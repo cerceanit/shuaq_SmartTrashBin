@@ -1,0 +1,2 @@
+# shuaq_SmartTrashBin
+ 
