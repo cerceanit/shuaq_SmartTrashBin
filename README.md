@@ -1,4 +1,4 @@
-# 🗑️ shuaq — Smart Waste Sorting Bin
+# shuaq — Smart Waste Sorting Bin
 
 An IoT-powered automated waste classifier that uses computer vision to sort waste into recyclable categories in real time. Built with an Arduino, a webcam, and a MobileNet-based model trained on a hybrid Kaggle + custom dataset — achieving **96% real-time classification accuracy**.
 
