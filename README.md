@@ -70,7 +70,7 @@ The model was trained using [Google Teachable Machine](https://teachablemachine.
 **Architecture:** Google Teachable Machine (exported as `.h5`)  
 **Input:** 224×224 RGB image, normalized to `[-1, 1]`  
 **Confidence threshold:** 90%  
-**Accuracy:** 91% real-time
+**Accuracy:** 90% real-time
 
 ---
 
