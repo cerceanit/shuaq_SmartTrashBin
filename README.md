@@ -1,15 +1,15 @@
 # shuaq — Smart Waste Sorting Bin
 
-An IoT-powered automated waste classifier that uses computer vision to sort waste into recyclable categories in real time. Built with an Arduino, a webcam, and a MobileNet-based model trained on a hybrid Kaggle + custom dataset — achieving **96% real-time classification accuracy**.
+An IoT-powered automated waste classifier that uses computer vision to sort waste into recyclable categories in real time. Built with an Arduino, a webcam, and a Teachable Machine-based model trained on a hybrid Kaggle + custom dataset — achieving **90% real-time classification accuracy**.
 
 ---
 
 ## How It Works
 
-Every 2 seconds, the system captures a frame from the webcam, crops it to a square, resizes it to 224×224, and runs inference through a MobileNet model. If the confidence for any class exceeds 90%, it sends a signal to the Arduino to physically sort the item.
+Every 2 seconds, the system captures a frame from the webcam, crops it to a square, resizes it to 224×224, and runs inference through a model. If the confidence for any class exceeds 90%, it sends a signal to the Arduino to physically sort the item.
 
 ```
-Webcam → Frame capture → MobileNet inference → Arduino signal → Bin sorting
+Webcam → Frame capture → Model inference → Arduino signal → Bin sorting
 ```
 
 **Waste categories:**
@@ -67,10 +67,10 @@ The model was trained using [Google Teachable Machine](https://teachablemachine.
 - A public waste classification dataset from Kaggle
 - A custom-collected dataset
 
-**Architecture:** MobileNet-V2 (exported as `.h5`)  
+**Architecture:** Google Teachable Machine (exported as `.h5`)  
 **Input:** 224×224 RGB image, normalized to `[-1, 1]`  
 **Confidence threshold:** 90%  
-**Accuracy:** 96% real-time
+**Accuracy:** 91% real-time
 
 ---
 
